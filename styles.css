@@ -325,3 +325,18 @@ body.calm .footer{color:#7a716b}
 body.calm .progress{background:#ff6b35}
 body.calm .cursor-dot{background:#1a1412}
 body.calm .cursor-ring{border-color:#8a817b}
+
+/* Iconos y colores de marca en contacto */
+.contact-icon svg{width:22px;height:22px;fill:currentColor;display:block}
+body .contact-card .contact-icon{color:#fff}
+body .contact-card .contact-icon.ic-mail{background:#fff;color:#EA4335}
+body .contact-card .contact-icon.ic-ig{background:linear-gradient(45deg,#feda75 0%,#fa7e1e 25%,#d62976 50%,#962fbf 75%,#4f5bd5 100%)}
+body .contact-card .contact-icon.ic-wa{background:#25D366}
+body .contact-card .contact-icon.ic-dc{background:#5865F2}
+.contact-card.brand-ig:hover{border-color:#d62976;box-shadow:0 10px 35px rgba(0,0,0,.28),0 0 25px rgba(214,41,118,.22)}
+.contact-card.brand-wa:hover{border-color:#25D366;box-shadow:0 10px 35px rgba(0,0,0,.28),0 0 25px rgba(37,211,102,.22)}
+.contact-card.brand-dc:hover{border-color:#5865F2;box-shadow:0 10px 35px rgba(0,0,0,.28),0 0 25px rgba(88,101,242,.28)}
+.contact-card.brand-ig>b{color:#e1306c}
+.contact-card.brand-wa>b{color:#25D366}
+.contact-card.brand-dc>b{color:#7983f5}
+body.calm .contact-card.featured .contact-icon.ic-mail{background:#fff;color:#EA4335}
