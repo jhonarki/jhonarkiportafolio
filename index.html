@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Jhonarki — diseñador de miniaturas para YouTube">
+<meta property="og:title" content="JHONARKI — Thumbnail Designer">
+<meta property="og:description" content="Miniaturas pensadas para llamar la atención y hacer que tu video destaque.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="thumbnail-food.webp">
+<meta name="theme-color" content="#0a0909">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6b35'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EJ%3C/text%3E%3C/svg%3E">
+<title>JHONARKI — Thumbnail Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#inicio" class="logo" aria-label="Jhonarki — inicio">
+    <span class="logo-mark">J</span><strong>JHONARKI</strong><small>PORTFOLIO</small>
+  </a>
+  <nav id="nav" aria-label="Principal">
+    <a href="#trabajos" data-i18n="work">TRABAJOS</a>
+    <a href="#proceso" data-i18n="process">PROCESO</a>
+    <a href="#sobre-mi" data-i18n="about">SOBRE MÍ</a>
+    <a href="#contacto" data-i18n="contact">CONTACTO</a>
+  </nav>
+  <div class="nav-tools">
+    <div class="lang-switch" role="group" aria-label="Idioma">
+      <button type="button" class="lang active" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="round-tool" id="theme" aria-label="Cambiar ambiente">◐</button>
+    <a class="round-tool" href="#contacto" aria-label="Contacto">↗</a>
+  </div>
+  <button type="button" class="menu" id="menu" aria-label="Menú" aria-expanded="false" aria-controls="nav">☰</button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-top">
+    <span class="mono" data-i18n="designer">THUMBNAIL DESIGNER / 2026</span>
+    <span class="status"><i></i> <span data-i18n="status">DISPONIBLE PARA PROYECTOS</span></span>
+  </div>
+  <div class="hero-main">
+    <div class="hero-kicker" data-i18n="kicker">DISEÑO QUE NO PASA DESAPERCIBIDO.</div>
+    <h1 data-i18n="heroTitle" data-wrap="span">Tu video<br><span>empieza aquí.</span></h1>
+    <p data-i18n="heroText">Creo miniaturas pensadas para llamar la atención, contar una idea en segundos y hacer que tu video destaque.</p>
+    <div class="actions">
+      <a class="btn light" href="#trabajos"><span data-i18n="viewWork">Ver mis trabajos</span> <b>↓</b></a>
+      <a class="btn" href="#contacto"><span data-i18n="wantThumb">Quiero una miniatura</span> <b>↗</b></a>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <span>JHONARKI / 01</span>
+    <span>THUMBNAILS · COMPOSICIÓN · RETOQUE</span>
+    <span data-i18n="scroll">SCROLL ↓</span>
+  </div>
+  <div class="hero-orb" aria-hidden="true"></div>
+</section>
+
+<section class="ticker" aria-hidden="true">
+  <div>THUMBNAILS QUE LLAMAN LA ATENCIÓN <b>✦</b> DISEÑO PARA YOUTUBE <b>✦</b> JHONARKI <b>✦</b> THUMBNAILS QUE LLAMAN LA ATENCIÓN <b>✦</b> DISEÑO PARA YOUTUBE <b>✦</b> JHONARKI <b>✦</b></div>
+</section>
+
+<section class="works" id="trabajos">
+  <div class="heading">
+    <div>
+      <span class="eyebrow" data-i18n="workEyebrow">01 / TRABAJOS</span>
+      <h2 data-i18n="workTitle" data-wrap="em">Lo que<br><em>he creado.</em></h2>
+    </div>
+    <div class="heading-right">
+      <p data-i18n="workText">Miniaturas hechas para diferentes ideas, estilos y tipos de contenido.</p>
+      <div class="work-meta"><span data-i18n="meta1">04 PROYECTOS</span><span data-i18n="meta2">100% DISEÑO</span><span>THUMBNAILS</span></div>
+    </div>
+  </div>
+  <div class="gallery">
+    <article class="card large">
+      <button type="button" class="thumb" data-image="thumbnail-food.webp" data-title="The Worst Food" data-cat="Food / Entertainment" aria-label="Abrir The Worst Food">
+        <img src="thumbnail-food.webp" width="1600" height="900" alt="Miniatura The Worst Food" decoding="async">
+        <span class="card-hover" aria-hidden="true"><span data-i18n="open">ABRIR</span><b>↗</b></span>
+      </button>
+      <div class="card-meta"><span>01</span><div><h3>The Worst Food</h3><p>Food / Entertainment</p></div><span>2026</span></div>
+    </article>
+    <article class="card">
+      <button type="button" class="thumb" data-image="thumbnail-vs.webp" data-title="Food VS" data-cat="Entertainment / Comparison" aria-label="Abrir Food VS">
+        <img src="thumbnail-vs.webp" width="1600" height="900" alt="Miniatura Food VS" loading="lazy" decoding="async">
+        <span class="card-hover" aria-hidden="true"><span data-i18n="open">ABRIR</span><b>↗</b></span>
+      </button>
+      <div class="card-meta"><span>02</span><div><h3>Food VS</h3><p>Entertainment / Comparison</p></div><span>2026</span></div>
+    </article>
+    <article class="card">
+      <button type="button" class="thumb" data-image="thumbnail-history.webp" data-title="History &amp; Science" data-cat="Education / Documentary" aria-label="Abrir History &amp; Science">
+        <img src="thumbnail-history.webp" width="1600" height="900" alt="Miniatura History &amp; Science" loading="lazy" decoding="async">
+        <span class="card-hover" aria-hidden="true"><span data-i18n="open">ABRIR</span><b>↗</b></span>
+      </button>
+      <div class="card-meta"><span>03</span><div><h3>History &amp; Science</h3><p>Education / Documentary</p></div><span>2026</span></div>
+    </article>
+    <article class="card">
+      <button type="button" class="thumb" data-image="thumbnail-secret.webp" data-title="The Secret" data-cat="Entertainment / Mystery" aria-label="Abrir The Secret">
+        <img src="thumbnail-secret.webp" width="1600" height="900" alt="Miniatura The Secret" loading="lazy" decoding="async">
+        <span class="card-hover" aria-hidden="true"><span data-i18n="open">ABRIR</span><b>↗</b></span>
+      </button>
+      <div class="card-meta"><span>04</span><div><h3>The Secret</h3><p>Entertainment / Mystery</p></div><span>2026</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="big-statement">
+  <span class="eyebrow" data-i18n="stmtEyebrow">02 / MI ENFOQUE</span>
+  <div>
+    <p data-i18n="stmt" data-wrap="span">Una buena miniatura tiene que <span>vender el clic</span> antes de que el espectador vea el video.</p>
+    <a href="#proceso" class="under-link" data-i18n="howWork">Así trabajo ↓</a>
+  </div>
+</section>
+
+<section class="process" id="proceso">
+  <div class="heading simple">
+    <div><span class="eyebrow" data-i18n="processEyebrow">03 / PROCESO</span><h2 data-i18n="processTitle" data-wrap="em">Simple.<br><em>Directo.</em></h2></div>
+    <p data-i18n="processText">Sin vueltas innecesarias. Cada parte tiene un propósito.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3 data-i18n="s1t">Me cuentas la idea</h3><p data-i18n="s1p">Qué trata el video, qué quieres destacar y qué estilo buscas.</p></div>
+    <div class="step"><strong>02</strong><h3 data-i18n="s2t">Construyo la escena</h3><p data-i18n="s2p">Personajes, fondos, texto, colores y composición trabajando juntos.</p></div>
+    <div class="step"><strong>03</strong><h3 data-i18n="s3t">Le damos impacto</h3><p data-i18n="s3p">Retoque, contraste y detalles para que funcione incluso en pequeño.</p></div>
+    <div class="step"><strong>04</strong><h3 data-i18n="s4t">Lista para publicar</h3><p data-i18n="s4p">Te entrego la miniatura final en alta calidad.</p></div>
+  </div>
+</section>
+
+<section class="about" id="sobre-mi">
+  <span class="eyebrow" data-i18n="aboutEyebrow">04 / SOBRE MÍ</span>
+  <div class="about-content">
+    <div class="about-number" aria-hidden="true">J</div>
+    <h2 data-i18n="aboutTitle" data-wrap="em">Diseño para que<br><em>te miren.</em></h2>
+    <p data-i18n="aboutText">Soy Jhonarki y me gusta convertir ideas simples en miniaturas que se sienten grandes. Me enfoco en composición, personajes, retoque y detalles que hagan que una imagen tenga presencia.</p>
+    <div class="skills"><span>PHOTOSHOP</span><span data-i18n="sk1">RETOQUE</span><span data-i18n="sk2">COMPOSICIÓN</span><span>THUMBNAILS</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <span class="eyebrow" data-i18n="contactEyebrow">05 / CONTACTO</span>
+      <h2 data-i18n="contactTitle">¿QUIERES<br>TRABAJAR<br>CONMIGO?</h2>
+      <h3 data-i18n="contactSub">HABLEMOS.</h3>
+      <p data-i18n="contactText">Cuéntame qué tienes en mente y vemos cómo convertir la idea en una miniatura que destaque.</p>
+    </div>
+    <div class="contact-links">
+      <a class="contact-card featured" href="mailto:pomasjhonarkigarcia@gmail.com">
+        <div class="contact-icon" aria-hidden="true">✉</div>
+        <div><strong data-i18n="mail">Correo</strong><span>pomasjhonarkigarcia@gmail.com</span></div><b aria-hidden="true">↗</b>
+      </a>
+      <a class="contact-card" href="https://www.instagram.com/jhonarkks_graphics/" target="_blank" rel="noopener noreferrer">
+        <div class="contact-icon" aria-hidden="true">◎</div>
+        <div><strong>Instagram</strong><span>@jhonarkks_graphics</span></div><b aria-hidden="true">↗</b>
+      </a>
+      <button class="contact-card discord-copy" type="button" data-discord="jhonarkks">
+        <div class="contact-icon" aria-hidden="true">◉</div>
+        <div><strong>Discord</strong><span>jhonarkks</span></div><b aria-hidden="true">⧉</b>
+      </button>
+      <small class="copy-note" id="copy-note" role="status" aria-live="polite" data-i18n="copyHint">Haz clic para copiar mi usuario de Discord.</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><span>JHONARKI / THUMBNAIL DESIGNER</span><span>© 2026</span></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+  <button type="button" class="modal-close" id="close" aria-label="Cerrar">×</button>
+  <button type="button" class="modal-nav" id="prev" aria-label="Anterior">‹</button>
+  <button type="button" class="modal-nav" id="next" aria-label="Siguiente">›</button>
+  <div class="modal-inner"><img id="modalImg" src="" alt=""><div><span id="modalCat"></span><h3 id="modalTitle"></h3></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
